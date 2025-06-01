@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,6 +8,32 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 15s linear infinite',
+      },
+      fontFamily: {
+        "montserrat": ["Montserrat", "sans-serif"],
+      },
+      colors: {
+        white: '#FFFCF9',
+        primary: '#FF7800',
+        secondary: '#f59e0b',
+        black: "#010101",
+        gray: {
+          dark: "#140A00",
+          light: "#515151",
+          lightest: "#888888",
+          DEFAULT: '#44403c',
+        },
+        accent: '#10b981',
+        danger: '#ef4444',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
