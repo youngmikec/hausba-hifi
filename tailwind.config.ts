@@ -24,7 +24,10 @@ const config: Config = {
         white: '#FFFCF9',
         primary: '#FF7800',
         secondary: '#f59e0b',
-        black: "#010101",
+        black: {
+          DEFAULT: '#010101',
+          gray: '#070400'
+        },
         gray: {
           dark: "#140A00",
           light: "#515151",
