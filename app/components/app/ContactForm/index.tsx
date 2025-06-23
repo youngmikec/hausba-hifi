@@ -6,7 +6,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <section className="bg-black-gray text-white py-32 px-6 md:px-20 mb-32">
+    <section className="bg-black-gray text-white py-32 px-6 md:px-20">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
         {/* Left Section */}
         <div>

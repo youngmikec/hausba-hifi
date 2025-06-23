@@ -10,7 +10,8 @@ const Navbar: FC = () => {
     const { toggleSideMenu } = useStore();
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-6 px-10 fixed top-0 w-full z-20 bg-white">
+            {/* fixed top-0 z-20 */}
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark py-4 px-10  w-full bg-white">
                 <div className="flex justify-between items-center gap-4">
                     <div className="hidden sm:block lg:block">
                         <ul className="flex justify-between gap-3">
