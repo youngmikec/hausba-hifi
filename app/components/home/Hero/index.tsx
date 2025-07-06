@@ -21,7 +21,7 @@ const Hero: FC = () => {
 
     return (
         <div
-            className="h-[80vh] w-full bg-center bg-cover transition-all ease-linear duration-3000 font-montserrat mt-20"
+            className="h-[80vh] w-full bg-center bg-cover transition-all ease-linear duration-3000 font-montserrat"
             style={{ backgroundImage: `url(${HeroBackgroundImages[currentIndex]})` }}
         >
             <div className="bg-black bg-opacity-50 h-full flex items-center justify-center relative">

@@ -5,7 +5,7 @@ import { FC } from "react";
 
 const ExperienceComp: FC = () => {
     return (
-        <div className="px-10 py-6 w-full min-h-[200px]">
+        <div className="px-10 py-6 w-full min-h-[200px] my-20">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
                 <div className="h-full flex justify-center items-center">
                     <div className="flex-col gap-4">
@@ -23,7 +23,7 @@ const ExperienceComp: FC = () => {
                     </div>
                 </div>
                 <div className="relative" style={{ 
-                    minHeight: "400px",
+                    minHeight: "500px",
                     maxHeight: "500px"
                 }}>
                     <Image

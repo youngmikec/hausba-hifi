@@ -7,14 +7,26 @@ const Banner: FC<{ bgImg?: string }> = ({ bgImg }) => {
 
     return (
         <>
-            <div className="w-full h-[650px] relative">
-                <Image 
+            <div 
+                className="w-full h-[650px] relative"
+                style={{ 
+                    minHeight: "600px",
+                    maxHeight: "650px",
+                    backgroundColor: "rgba(0, 0, 0, 0.3)",
+                    background: `url(${bgImg || defaultImg})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundBlendMode: "overlay",
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
+                {/* <Image 
                     src={bgImg || defaultImg}
                     alt="banner"
                     fill
                     objectFit={"cover"}
                     objectPosition={"center"}
-                />
+                /> */}
 
                 <div className="absolute bottom-6 right-5 flex justify-center items-center">
                     <Image 
