@@ -45,15 +45,21 @@ const Commercial: FC = () => {
                             </p>
                         </div>
                         <div>
-                            <Link href={"/commercial/"} className="text-primary flex gap-4 justify-start items-center">
+                            <Link href={"/commercial/huddles-meeting-room"} className="text-primary flex gap-4 justify-start items-center">
                                 <span>Huddles & Meeting Rooms</span>
-                                <FaArrowRightLong size="15" className='text-primary' />
+                                <Image 
+                                    src="/images/arrow-right.png" 
+                                    alt="arrow-right"
+                                    width={20}
+                                    height={20}
+                                />
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div className="w-full pb-6">
             <div className="w-11/12 sm:w-10/12 md:w-10/12 lg:w-9/12 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
@@ -87,11 +93,17 @@ const Commercial: FC = () => {
                             <div>
                                 <Link href={"/commercial/auditorium"} className="text-primary flex gap-4 justify-start items-center">
                                     <span>Auditorium</span>
-                                    <FaArrowRightLong size="15" className='text-primary' />
+                                    <Image 
+                                        src="/images/arrow-right.png" 
+                                        alt="arrow-right"
+                                        width={20}
+                                        height={20}
+                                    />
                                 </Link>
                             </div>
                         </div>
                     </div>
+                    
                     <div className="-mt-20  mb-32 z-20">
                         <div className="relative w-full h-[250px] mb-8">
                             <Image
@@ -123,7 +135,12 @@ const Commercial: FC = () => {
                             <div>
                                 <Link href={"/commercial/board-room"} className="text-primary flex gap-4 justify-start items-center">
                                     <span>Board Rooms & Training Rooms</span>
-                                    <FaArrowRightLong size="15" className='text-primary' />
+                                    <Image 
+                                        src="/images/arrow-right.png" 
+                                        alt="arrow-right"
+                                        width={20}
+                                        height={20}
+                                    />
                                 </Link>
                             </div>
                         </div>

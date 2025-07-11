@@ -9,7 +9,7 @@ import Image from 'next/image';
 const HotelManagementSystem: FC = () => {
   return (
     <HomeLayout>
-      <Banner bgImg={"/images/woman-with-tablet.png"} />
+      <Banner bgImg={"/images/african-woman.png"} />
       <div>
         {/* smart survellance */}
         <div className="px-10 py-6 w-full min-h-[200px]">

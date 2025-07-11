@@ -9,7 +9,7 @@ import Image from 'next/image';
 const SpacesApplication: FC = () => {
   return (
     <HomeLayout>
-      <Banner bgImg={"/images/woman-with-tablet.png"} />
+      <Banner bgImg={"/images/guys-with-tab.png"} />
       <div>
         {/* smart survellance */}
         <div className="px-10 py-6 w-full min-h-[200px]">
