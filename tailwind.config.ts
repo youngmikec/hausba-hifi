@@ -19,6 +19,7 @@ const config: Config = {
       },
       fontFamily: {
         "montserrat": ["Montserrat", "sans-serif"],
+        "mullish": ["Mullish", "sans-serif"],
       },
       colors: {
         white: '#FFFCF9',

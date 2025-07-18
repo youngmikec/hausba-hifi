@@ -1,4 +1,3 @@
-import { AppLink, FooterLinks } from "@/app/constants";
 import { MdOutlineMailOutline } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,6 +52,14 @@ const Footer: FC = () => {
                                     <p className="my-4">
                                         <Link
                                             className="font-montserrat text-white my-4 text-sm"
+                                            href={"/about-us"}
+                                        >
+                                            <span>About Us</span>
+                                        </Link>
+                                    </p>
+                                    <p className="my-4">
+                                        <Link
+                                            className="font-montserrat text-white my-4 text-sm"
                                             href={"/contact-us"}
                                         >
                                             <span>Contact Us</span>
@@ -68,7 +75,7 @@ const Footer: FC = () => {
                                     <p className="my-4">
                                         <Link
                                             className="font-montserrat text-white my-4 text-sm"
-                                            href={"/terms-conditions"}
+                                            href={"/terms-and-conditions"}
                                         >
                                             <span>Terms & Conditions</span>
                                         </Link>

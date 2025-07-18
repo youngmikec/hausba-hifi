@@ -9,33 +9,61 @@
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-Italic.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/Montserrat-BoldItalic.ttf') format('truetype');
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
 }
 
+/* Mullish font */
+@font-face {
+  font-family: "Mullish";
+  src: url("/fonts/Mullish/Mullish-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mullish";
+  src: url("/fonts/Mullish/Mullish-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mullish";
+  src: url("/fonts/Mullish/Mullish-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mullish";
+  src: url("/fonts/Mullish/Mullish-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -46,5 +74,7 @@
 }
 
 body {
-  font-family: "Montserrat", "Hellvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+  font-family: "Montserrat", "Mullish", "Hellvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
