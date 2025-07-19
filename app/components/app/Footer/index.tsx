@@ -65,6 +65,14 @@ const Footer: FC = () => {
                                             <span>Contact Us</span>
                                         </Link>
                                     </p>
+                                    <p className="my-4">
+                                        <Link
+                                            className="font-montserrat text-white my-4 text-sm"
+                                            href={"/portfolio"}
+                                        >
+                                            <span>Our Portfolio</span>
+                                        </Link>
+                                    </p>
                                 </div>
                             </div>
 
