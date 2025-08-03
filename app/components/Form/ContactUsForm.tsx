@@ -14,8 +14,9 @@ const ContactForm = () => {
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value, type, checked } = e.target;
-    setForm({ ...form, [name]: type === 'checkbox' ? checked : value });
+    const target = e.target as HTMLInputElement | HTMLTextAreaElement;
+    const { name, value, type } = target;
+    setForm({ ...form, [name]: type === 'checkbox' ? (target as HTMLInputElement).checked : value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -37,7 +38,7 @@ const ContactForm = () => {
           required
           className="w-full bg-transparent border-[1px] border-gray-lightest mt-1 px-4 py-3 font-mullish placeholder:text-gray-light rounded-lg"
         />
-        <p className="text-sm text-[#00000080] font-normal font-mullish">We'll get back to you</p>
+        <p className="text-sm text-[#00000080] font-normal font-mullish">We will get back to you</p>
       </div>
 
       <div>
@@ -51,7 +52,7 @@ const ContactForm = () => {
           required
           className="w-full bg-transparent border-[1px] border-gray-lightest mt-1 px-4 py-3 font-mullish placeholder:text-gray-light rounded-lg"
         />
-        <p className="text-sm text-[#00000080] font-normal font-mullish">We'll keep it private</p>
+        <p className="text-sm text-[#00000080] font-normal font-mullish">We will keep it private</p>
       </div>
 
       <div>
@@ -65,7 +66,7 @@ const ContactForm = () => {
           required
           className="w-full bg-transparent border-[1px] border-gray-lightest mt-1 px-4 py-3 font-mullish placeholder:text-gray-light rounded-lg"
         />
-        <p className="text-sm text-[#00000080] font-normal font-mullish">We'll serve you better</p>
+        <p className="text-sm text-[#00000080] font-normal font-mullish">We will serve you better</p>
       </div>
 
       <div>
@@ -79,7 +80,7 @@ const ContactForm = () => {
           required
           className="w-full bg-transparent border-[1px] border-gray-lightest mt-1 px-4 py-3 font-mullish placeholder:text-gray-light rounded-lg"
         />
-        <p className="text-sm text-[#00000080] font-normal font-mullish">We'll serve you better</p>
+        <p className="text-sm text-[#00000080] font-normal font-mullish">We will serve you better</p>
       </div>
 
       <div>

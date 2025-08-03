@@ -129,7 +129,7 @@ const Residential: FC = () => {
                 <p className="w-full md:w-8/12 text-left text-[16px] md:text-[16px] text-black font-montserrat my-2">
                   From discreet surveillance to keyless entry, protect what matters most with intelligent 
                   systems tailored to your lifestyle. 
-                  Be instantly alerted to any unexpected activity whether you're home or 
+                  Be instantly alerted to any unexpected activity whether you are home or 
                   away and manage access with fingerprint precision on your mobile device. Feel safe.
                 </p>
                 <p className="w-full md:w-8/12 text-[16px] md:text-[16px] text-black font-bold font-montserrat my-2">Stay Connected. Live Freely.</p>

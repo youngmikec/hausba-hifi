@@ -18,7 +18,7 @@ const TermsAndConditionsPage = () => {
 
       <Section title="Client Responsibilities">
         <ul className="list-disc list-inside space-y-3 font-montserrat">
-          <li>Client shall provide regulated power supply onsite for HAUSBA to power work tools and equipment during the site's approved working hours.</li>
+          <li>Client shall provide regulated power supply onsite for HAUSBA to power work tools and equipment during the site&lsquo;s approved working hours.</li>
           <li>Client shall provide manned crane or scaffold for HAUSBA upon request upon establishment on its necessity for the accomplishment of project task.</li>
           <li>Client shall be responsible for all structural openings through walls, floors, ceilings and landscape. Client shall provide secure storage for all supplied project materials throughout the project lifecycle.</li>
           <li>Client shall provide physical security onsite to ensure material and human resources remain secure onsite.</li>
