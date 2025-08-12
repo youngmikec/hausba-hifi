@@ -6,6 +6,6 @@ export interface Store {
 };
 
 export const useStore = create<Store>((set) => ({
-    isSideMenuOpen: false,
+    isSideMenuOpen: true,
     toggleSideMenu: () => set((state) => ({ isSideMenuOpen: !state.isSideMenuOpen })),
 }));
