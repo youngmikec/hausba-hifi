@@ -45,7 +45,7 @@ const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
             subItems: [
                 {
                     title: 'Huddle & Meeting Rooms',
-                    link: '/commercial/huddle-meeting-room',
+                    link: '/commercial/huddles-meeting-room',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
@@ -107,8 +107,8 @@ const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
             className={`w-full h-[100vh] fixed top-0 right-0 z-[100] bg-[#e3e3e330] cursor-pointer ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
             onClick={toggleSideMenu}
         >
-            <div className={`w-64 h-[100vh] bg-white shadow-md z-[100] absolute right-0 p-4 top-0 transition-transform duration-300 ease-in-out flex flex-col`}>
-                <div className="flex justify-end p-4 mb-4">
+            <div className={`w-64 h-[100vh] bg-white shadow-md z-[110] fixed right-0 p-4 top-0 transition-transform duration-300 ease-in-out flex flex-col`}>
+                <div className="flex justify-end p-4 mb-4" onClick={toggleSideMenu}>
                     <button onClick={toggleSideMenu} className="text-2xl text-black">
                         &times;
                     </button>
