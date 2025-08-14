@@ -1,3 +1,5 @@
+"use client"
+
 import { FC } from "react";
 import Footer from "../app/Footer";
 import Navbar from "../app/Navbar";

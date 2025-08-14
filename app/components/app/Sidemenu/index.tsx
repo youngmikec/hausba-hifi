@@ -1,6 +1,7 @@
-import Link from "next/link";
-import { FC, useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
+"use client";
+
+import { FC } from 'react';
+import SidebarItem, { ISidebarItem } from './Sidebaritem';
 
 
 type Props = {
@@ -8,60 +9,8 @@ type Props = {
     toggleSideMenu: () => void;
 }
 
-type SidebarItem = {
-    title: string;
-    link: string;
-    hasSubItems: boolean;
-    isCollapsed: boolean;
-    subItems?: SidebarItem[];
-}
-
-const SidebarItem = ({ item, toggleSideMenu }: { item: SidebarItem; toggleSideMenu: () => void }) => {
-    const [isCollapsed, setIsCollapsed] = useState<boolean>(false);
-    return (
-        <div key={item.title} className="my-2">
-            <div
-                className="px-4 py-2 text-sm text-gray rounded-md hover:bg-primary hover:text-white flex justify-between"
-            >
-                <p>{item.title}</p>
-                {
-                    item.hasSubItems && (
-                        <span 
-                            onClick={() => setIsCollapsed(!isCollapsed)}
-                            className={`${isCollapsed ? 'rotate-180 transition-all' : ''} cursor-pointer`}
-                        >
-                            <FaChevronDown size={15} />
-                        </span>
-                    )
-                }
-            </div>
-            {
-                item.hasSubItems && isCollapsed && (
-                    <div>
-                        {
-                            item?.subItems?.map((subItem) => (
-                                <Link 
-                                    onClick={() => {
-                                        setIsCollapsed(!isCollapsed);
-                                        toggleSideMenu();
-                                    }}
-                                    key={subItem.title} 
-                                    href={subItem.link} 
-                                    className="block px-4 py-2 text-xs text-gray-light hover:bg-gray-100"
-                                >
-                                    {subItem.title}
-                                </Link>
-                            ))
-                        }
-                    </div>
-                )
-            }
-        </div>
-    )
-}
-
 const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
-    const sidebarItems: SidebarItem[] = [
+    const sidebarItems: ISidebarItem[] = [
         {
             title: 'Residential',
             link: '/residential',
@@ -69,14 +18,20 @@ const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
             isCollapsed: false,
             subItems: [
                 {
-                    title: 'Residential 1',
-                    link: '/residential/1',
+                    title: 'Premium Entertainment',
+                    link: '/residential/premium-entertainment',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
                 {
-                    title: 'Residential 2',
-                    link: '/residential/2',
+                    title: 'Comfort & Convenience',
+                    link: '/residential/comfort-convenience',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Safety & Security',
+                    link: '/residential/safety-security',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
@@ -89,14 +44,20 @@ const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
             isCollapsed: false,
             subItems: [
                 {
-                    title: 'Commercial 1',
-                    link: '/commercial/1',
+                    title: 'Huddle & Meeting Rooms',
+                    link: '/commercial/huddle-meeting-room',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
                 {
-                    title: 'Commercial 2',
-                    link: '/commercial/2',
+                    title: 'Board Rooms & Training Rooms',
+                    link: '/commercial/board-room',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Auditorium',
+                    link: '/commercial/auditorium',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
@@ -109,41 +70,76 @@ const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
             hasSubItems: true,
             subItems: [
                 {
-                    title: 'Hospitality 1',
-                    link: '/hospitality/1',
+                    title: 'Guest Room Management System',
+                    link: '/hospitality/guest-room-mgt',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
                 {
-                    title: 'Hospitality 2',
-                    link: '/hospitality/2',
+                    title: 'Hotel Management System',
+                    link: '/hospitality/hotel-mgt-system',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Spaces & Applications',
+                    link: '/hospitality/spaces-application',
                     hasSubItems: false,
                     isCollapsed: false,
                 },
             ]
+        },
+        {
+            title: 'About Us',
+            link: '/about-us',
+            isCollapsed: false,
+            hasSubItems: false,
+        },
+        {
+            title: 'Projects',
+            link: '/portfolio',
+            isCollapsed: false,
+            hasSubItems: false,
         }
     ]
     return (
         <div 
-            className={`w-full h-[100vh] absolute top-0 right-0 z-20 bg-transparent cursor-pointer ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}
+            className={`w-full h-[100vh] fixed top-0 right-0 z-[100] bg-[#e3e3e330] cursor-pointer ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+            onClick={toggleSideMenu}
         >
-            <div className={`w-64 h-[100vh] bg-white z-20 -right-60 p-4 top-0 mr-0 transition-transform duration-300 ease-in-out`}>
+            <div className={`w-64 h-[100vh] bg-white shadow-md z-[100] absolute right-0 p-4 top-0 transition-transform duration-300 ease-in-out flex flex-col`}>
                 <div className="flex justify-end p-4 mb-4">
-                    <button onClick={() => toggleSideMenu()} className="text-2xl text-black">
+                    <button onClick={toggleSideMenu} className="text-2xl text-black">
                         &times;
                     </button>
                 </div>
 
-                <div>
+                <div className="flex-grow overflow-y-auto">
                     {
-                        sidebarItems.map((item: SidebarItem) => (
-                            <SidebarItem 
+                        sidebarItems.map((item: ISidebarItem) => (
+                            <SidebarItem
                                 key={item.title} 
                                 item={item}
                                 toggleSideMenu={toggleSideMenu} 
                             />
                         ))
                     }
+                </div>
+                
+                <div className="mt-auto pt-4 border-t border-[#C0C0C0]">
+                    <div className="py-3">
+                        <SidebarItem 
+                            item={
+                                {
+                                    title: 'Contact Hausba',
+                                    link: '/contact-us',
+                                    hasSubItems: false,
+                                    isCollapsed: false,
+                                }
+                            }
+                            toggleSideMenu={toggleSideMenu}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

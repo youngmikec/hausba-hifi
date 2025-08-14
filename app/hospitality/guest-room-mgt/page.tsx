@@ -33,12 +33,13 @@ const GuestRoomManagementSystem: FC = () => {
           </div>
         </div>
         {/* Control Room */}
-        {/* Control Room */}
+
+        {/* Integrated Room Controls */}
         <div className='w-10/12 mx-auto md:w-9/12'>
           <div className="px-10 w-full min-h-[200px]">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-12">
               <div 
-                className="relative h-[300px] md:h-[600px]" 
+                className="relative h-[200px] md:h-[600px]" 
                 style={{ 
                   background: 'url(/images/termostat-controller.png)',
                   backgroundSize: 'cover',
@@ -62,7 +63,7 @@ const GuestRoomManagementSystem: FC = () => {
             </div>
           </div>
         </div>
-        {/* Control Room */}
+        {/* Integrated Room Controls */}
 
         <div className="my-40">
           <div className="w-10/12 mx-auto md:w-9/12">

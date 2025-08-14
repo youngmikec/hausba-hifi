@@ -1,9 +1,15 @@
-import AppButton from "@/app/shared/app-button";
-import Image from "next/image";
+"use client"
+
 import { FC } from "react";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import AppButton from "@/app/shared/app-button";
 
 
 const ExperienceComp: FC = () => {
+    const router = useRouter();
+    const goToExperiencePage = () => router.push("/experience-center");
+    
     return (
         <div className="px-10 py-6 w-full min-h-[200px] my-20">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0">
@@ -18,6 +24,7 @@ const ExperienceComp: FC = () => {
                                 bgColor={"primary"}
                                 width={"max"}
                                 btnText={"Visit Hausba"}
+                                onClick={goToExperiencePage}
                             />
                         </div>
                     </div>
