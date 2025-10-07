@@ -8,13 +8,15 @@ import { useStore } from "../../Store";
 
 
 const HomeLayout: FC<{ children: React.ReactNode }> = ({ children }) => {
-    const { isSideMenuOpen, toggleSideMenu } = useStore();
+    const { isSideMenuOpen } = useStore();
     return (
         <div className="relative w-full overflow-hidden">
             <Navbar />
             {
                 isSideMenuOpen && (
-                    <SideMenu isOpen={isSideMenuOpen} toggleSideMenu={toggleSideMenu} />
+                    <SideMenu 
+                        isOpen={isSideMenuOpen} 
+                    />
                 )
             }
             <div>

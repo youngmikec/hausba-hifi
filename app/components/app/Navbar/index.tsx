@@ -1,34 +1,16 @@
 "use client";
 
-import { useStore } from "@/app/Store";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { usePathname } from "next/navigation";
-
-type INavLink = {
-    name: string;
-    href: string;
-}
+import { useStore } from "../../../Store";
+import { Navigations } from "../../../constants";
 
 const Navbar: FC = () => {
     const { toggleSideMenu } = useStore();
     const pathname = usePathname();
     
-    const navigations: INavLink[] = [
-        {
-            name: "Residential",
-            href: "/residential",
-        },
-        {
-            name: "Commercial",
-            href: "/commercial",
-        },
-        {
-            name: "Hospitality",
-            href: "/hospitality",
-        },
-    ];
     return (
         <>
             {/* fixed top-0 z-20 */}
@@ -37,7 +19,7 @@ const Navbar: FC = () => {
                     <div className="hidden sm:block lg:block">
                         <ul className="flex justify-between gap-3">
                             {
-                                navigations.map((item) => (
+                                Navigations.map((item) => (
                                     <li key={item.href} className="relative">
                                         {pathname.includes(item.href) && item.href !== "/" && (
                                             <div className="absolute -bottom-2 right-1/2 w-2 h-2 rounded-full bg-primary"></div>
@@ -72,7 +54,7 @@ const Navbar: FC = () => {
                         aria-controls="navbarNav" 
                         aria-expanded="false" 
                         aria-label="Toggle navigation"
-                        onClick={toggleSideMenu}
+                        onClick={() => toggleSideMenu()}
                     >
                         <Image 
                             src={'/images/ham-menu.svg'}
