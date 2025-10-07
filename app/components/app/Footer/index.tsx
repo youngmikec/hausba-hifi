@@ -122,16 +122,6 @@ const Footer: FC = () => {
                     </div>
 
                 </div>
-                <div className="bg-black-gray flex justify-center relative items-center w-[94%] mx-auto h-[200px]">
-                    <Image
-                        src={'/images/Logo_white.png'}
-                        // width={400}
-                        // height={150}
-                        fill
-                        objectFit="cover"
-                        alt={'logo'}
-                    />
-                </div>
             </div>
         </>
     )
