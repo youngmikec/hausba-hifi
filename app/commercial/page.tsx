@@ -3,12 +3,11 @@
 import { FC } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaArrowRightLong } from "react-icons/fa6";
 
 
 import Banner from '../components/app/Banner';
-import ContactForm from '../components/app/ContactForm';
 import HomeLayout from '../components/layouts/home-layout';
+import SpeakToConsultant from '../components/app/Speak-To-Consultant';
 
 const Commercial: FC = () => {
   return (
@@ -17,9 +16,9 @@ const Commercial: FC = () => {
         <div className="min-h-[350px] w-full bg-black-gray pb-6">
             <div className="w-9/12 sm:w-6/12 md:w-4/12 mx-auto">
                 <div className="-mt-20  mb-32 z-20">
-                    <div className="relative w-full h-[250px] mb-8">
+                    <div className="relative w-full h-[500px] mb-8">
                         <Image
-                            src={'/images/default-banner.png'}
+                            src={'/images/analytic-summary.png'}
                             alt="display"
                             fill
                             objectFit='cover'
@@ -64,9 +63,9 @@ const Commercial: FC = () => {
             <div className="w-11/12 sm:w-10/12 md:w-10/12 lg:w-9/12 mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     <div className="-mt-20  mb-32 z-20">
-                        <div className="relative w-full h-[250px] mb-8">
+                        <div className="relative w-full h-[500px] mb-8">
                             <Image
-                                src={'/images/default-banner.png'}
+                                src={'/images/meeting-call.png'}
                                 alt="display"
                                 fill
                                 objectFit='cover'
@@ -105,9 +104,9 @@ const Commercial: FC = () => {
                     </div>
                     
                     <div className="-mt-20  mb-32 z-20">
-                        <div className="relative w-full h-[250px] mb-8">
+                        <div className="relative w-full h-[500px] mb-8">
                             <Image
-                                src={'/images/default-banner.png'}
+                                src={'/images/strategy-meeting.png'}
                                 alt="display"
                                 fill
                                 objectFit='cover'
@@ -149,7 +148,7 @@ const Commercial: FC = () => {
                 </div>
             </div>
         </div>
-        <ContactForm />
+        <SpeakToConsultant />
     </HomeLayout>
   );
 }

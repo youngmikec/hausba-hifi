@@ -1,67 +1,16 @@
+"use client"
+import { FC } from 'react';
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import HomeLayout from "../components/layouts/home-layout"
+import { PortfolioProjects, IPortfolioProject } from "../constant";
 
 
-const PortfolioPage = () => {
-  const gallery = [
-    {
-      img: "/images/dark-cinema-room-2.png",
-      title: "Lake Chad Cinema",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/red-seat-room.png",
-      title: "Lake Chad Cinema",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/coronation-house.png",
-      title: "Coronation Bank",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/red-seat-cinema.png",
-      title: "Hausba Lagos Cinema",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/big-screen-cinema-room.png",
-      title: "Sencillio Beach House",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/microsoft-office.png",
-      title: "Microsoft Lagos Office",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/office-lounge.png",
-      title: "UAC Group",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/office-space.png",
-      title: "Softcom Head Office",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/gt-bank.png",
-      title: "GT Bank Auditorium",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/grilled-house.png",
-      title: "Heritage Place Boardroom",
-      location: "Lagos, Nigeria",
-    },
-    {
-      img: "/images/black-seat-cinema.png",
-      title: "BUA Cinema",
-      location: "Lagos, Nigeria",
-    },
-    
-  ];
 
+const PortfolioPage: FC = () => {
+  const router = useRouter();
+  const gotoProjectPage = (slug: string) => router.push(`/portfolio/${slug}`);
 
   return (
     <HomeLayout>
@@ -78,8 +27,12 @@ const PortfolioPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-40 p-4 px-0">
           {
-            gallery.map((item: any, idx: number) => (
-              <div className={`${idx % 2 === 1 ? "-my-32 -sm:mt-28" : ""}`} key={idx}>
+            PortfolioProjects.map((item: IPortfolioProject, idx: number) => (
+              <div 
+                className={`${idx % 2 === 1 ? "-my-32 -sm:mt-28" : ""} cursor-pointer`} 
+                key={idx}
+                onClick={() => gotoProjectPage(item.slug)}
+              >
                 <Image
                   src={item.img}
                   alt="Home Cinema Room"

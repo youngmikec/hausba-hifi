@@ -15,7 +15,7 @@ const Banner: FC<{ bgImg?: string }> = ({ bgImg }) => {
                     backgroundColor: "rgba(0, 0, 0, 0.3)",
                     background: `url(${bgImg || defaultImg})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'center top',
                     backgroundBlendMode: "overlay",
                     backgroundRepeat: 'no-repeat'
                 }}

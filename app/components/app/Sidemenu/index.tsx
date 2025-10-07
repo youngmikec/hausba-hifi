@@ -10,15 +10,111 @@ type Props = {
     isOpen: boolean;
 }
 
+<<<<<<< HEAD
 const SideMenu: FC<Props> = ({ isOpen }) => {
     const { toggleSideMenu } = useStore();
+=======
+const SideMenu: FC<Props> = ({ isOpen, toggleSideMenu }) => {
+    const sidebarItems: ISidebarItem[] = [
+        {
+            title: 'Residential',
+            link: '/residential',
+            hasSubItems: true,
+            isCollapsed: false,
+            subItems: [
+                {
+                    title: 'Premium Entertainment',
+                    link: '/residential/premium-entertainment',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Comfort & Convenience',
+                    link: '/residential/comfort-convenience',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Safety & Security',
+                    link: '/residential/safety-security',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+            ]
+        },
+        {
+            title: 'Commercial',
+            link: '/commercial',
+            hasSubItems: true,
+            isCollapsed: false,
+            subItems: [
+                {
+                    title: 'Huddle & Meeting Rooms',
+                    link: '/commercial/huddles-meeting-room',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Board Rooms & Training Rooms',
+                    link: '/commercial/board-room',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Auditorium',
+                    link: '/commercial/auditorium',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+            ]
+        },
+        {
+            title: 'Hospitality',
+            link: '/hospitality',
+            isCollapsed: false,
+            hasSubItems: true,
+            subItems: [
+                {
+                    title: 'Guest Room Management System',
+                    link: '/hospitality/guest-room-mgt',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Hotel Management System',
+                    link: '/hospitality/hotel-mgt-system',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+                {
+                    title: 'Spaces & Applications',
+                    link: '/hospitality/spaces-application',
+                    hasSubItems: false,
+                    isCollapsed: false,
+                },
+            ]
+        },
+        {
+            title: 'About Us',
+            link: '/about-us',
+            isCollapsed: false,
+            hasSubItems: false,
+        },
+        {
+            title: 'Projects',
+            link: '/portfolio',
+            isCollapsed: false,
+            hasSubItems: false,
+        }
+    ]
+>>>>>>> d029c3b85130620302739db6c9b92195f9c92034
     return (
         <div 
             className={`w-full h-[100vh] fixed top-0 right-0 z-[100] bg-[#e3e3e330] cursor-pointer ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
             onClick={toggleSideMenu}
         >
-            <div className={`w-64 h-[100vh] bg-white shadow-md z-[100] absolute right-0 p-4 top-0 transition-transform duration-300 ease-in-out flex flex-col`}>
-                <div className="flex justify-end p-4 mb-4">
+            <div className={`w-64 h-[100vh] bg-white shadow-md z-[110] fixed right-0 p-4 top-0 transition-transform duration-300 ease-in-out flex flex-col`}>
+                <div className="flex justify-end p-4 mb-4" onClick={toggleSideMenu}>
                     <button onClick={toggleSideMenu} className="text-2xl text-black">
                         &times;
                     </button>
