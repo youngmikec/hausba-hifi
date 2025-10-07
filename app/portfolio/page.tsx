@@ -36,7 +36,7 @@ const PortfolioPage: FC = () => {
                 <Image
                   src={item.img}
                   alt="Home Cinema Room"
-                  className="object-contain"
+                  className="object-contain rounded-2xl"
                   width={450}
                   height={900}
                 />

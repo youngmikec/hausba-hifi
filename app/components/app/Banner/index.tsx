@@ -20,13 +20,6 @@ const Banner: FC<{ bgImg?: string }> = ({ bgImg }) => {
                     backgroundRepeat: 'no-repeat'
                 }}
             >
-                {/* <Image 
-                    src={bgImg || defaultImg}
-                    alt="banner"
-                    fill
-                    objectFit={"cover"}
-                    objectPosition={"center"}
-                /> */}
 
                 <div className="absolute bottom-6 right-5 flex justify-center items-center">
                     <Image 
