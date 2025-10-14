@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
@@ -59,12 +60,15 @@ const SignatureHero = () => {
             index === currentIndex ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <img
+          <Image
             src={project.backgroundImage}
             alt={project.title}
+            fill
+            objectFit='cover'
+            objectPosition='center'
             className="h-full w-full object-cover bg-blend-overlay bg-black"
           />
-          <div className="absolute inset-0 bg-hero-overlay/60" />
+          <div className="absolute inset-0 bg-[#010101ea]" />
         </div>
       ))}
 

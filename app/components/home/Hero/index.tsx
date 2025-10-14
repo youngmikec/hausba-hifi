@@ -1,6 +1,5 @@
 'use client'
 import { HeroBackgroundImages } from "@/app/constants";
-import AppButton from "@/app/shared/app-button";
 import { FC, useEffect, useState } from "react";
 
 type Props = {

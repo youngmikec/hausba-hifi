@@ -8,6 +8,7 @@ import OurProjectSection from '../shared/OurProjects';
 import WhyChooseUsSection from '../shared/WhyChooseUs';
 import SignatureHero from '../components/app/Residential/SignatureHero';
 import ExperienceComp from '../components/home/ExperienceComp';
+import TrustedBy from '../shared/TrustedBy';
 
 const Residential: FC = () => {
   return (
@@ -17,6 +18,7 @@ const Residential: FC = () => {
       <SignatureHero />
       <WhyChooseUsSection />
       <OurProjectSection />
+      <TrustedBy />
       <ExperienceComp />
     </HomeLayout>
   );
