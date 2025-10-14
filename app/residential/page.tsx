@@ -6,14 +6,18 @@ import ResidentialHeroSection from '../components/app/Residential/Hero';
 import ShowcaseSection from '../components/app/Residential/ShowcaseSection';
 import OurProjectSection from '../shared/OurProjects';
 import WhyChooseUsSection from '../shared/WhyChooseUs';
+import SignatureHero from '../components/app/Residential/SignatureHero';
+import ExperienceComp from '../components/home/ExperienceComp';
 
 const Residential: FC = () => {
   return (
     <HomeLayout>
       <ResidentialHeroSection />
       <ShowcaseSection />
-      <OurProjectSection />
+      <SignatureHero />
       <WhyChooseUsSection />
+      <OurProjectSection />
+      <ExperienceComp />
     </HomeLayout>
   );
 }

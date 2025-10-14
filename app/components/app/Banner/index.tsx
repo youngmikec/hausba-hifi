@@ -8,10 +8,10 @@ const Banner: FC<{ bgImg?: string }> = ({ bgImg }) => {
     return (
         <>
             <div 
-                className="w-full h-[650px] relative"
+                className="w-full relative"
                 style={{ 
                     minHeight: "600px",
-                    maxHeight: "650px",
+                    maxHeight: "1000px",
                     backgroundColor: "rgba(0, 0, 0, 0.3)",
                     background: `url(${bgImg || defaultImg})`,
                     backgroundSize: 'cover',
@@ -20,15 +20,6 @@ const Banner: FC<{ bgImg?: string }> = ({ bgImg }) => {
                     backgroundRepeat: 'no-repeat'
                 }}
             >
-
-                <div className="absolute bottom-6 right-5 flex justify-center items-center">
-                    <Image 
-                        width={50}
-                        height={50}
-                        src="/images/play_circle.png" 
-                        alt="play" 
-                    />
-                </div>
             </div>
         </>
     )

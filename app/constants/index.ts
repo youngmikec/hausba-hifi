@@ -16,6 +16,23 @@ export const CompanyLogos: string[] = [
     '/images/company-logos/Yinka-Folawiyo-Group-Logo-q.png',
 ];
 
+// Categorized logos for Trusted By section
+export const DevelopersLogos: string[] = [
+    '/images/company-logos/HH-Logo.png',
+    '/images/company-logos/Petralon-New-Logo.png',
+    '/images/company-logos/Microsoft-Logo.png',
+];
+
+export const ArchitectsLogos: string[] = [
+    '/images/company-logos/mar-and-mor.png',
+    '/images/company-logos/Yinka-Folawiyo-Group-Logo-q.png',
+];
+
+export const MEPLogos: string[] = [
+    '/images/company-logos/lutron.svg',
+    '/images/company-logos/mtn-logo.svg',
+];
+
 export interface AppLink {
     path: string;
     title: string;
@@ -157,3 +174,17 @@ export const SidebarItems: ISidebarItem[] = [
         hasSubItems: false,
     }
 ]
+
+export const ProjectDetails = {
+    multiDwelling: {
+        header: "Central Building Access & Visitor Management",
+        img: "/images/new-imgs/stylish-highrise.png",
+        description: "Make first impressions unforgettable. Our secure, touchless access and digital visitor management systems provide seamless entry experiences that impress residents and their guests while enhancing building security."
+    },
+    largeVilla: {
+        header: "Surveillance & Security for Common Areas",
+        img: "/images/new-imgs/large-villa.png",
+        description: "Reassure buyers with invisible but powerful protection. Discreet surveillance and advanced security infrastructure safeguard shared spaces, ensuring peace of mind without compromising aesthetics."
+    },
+
+}

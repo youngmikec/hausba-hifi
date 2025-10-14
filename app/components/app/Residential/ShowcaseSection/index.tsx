@@ -38,12 +38,12 @@ const ShowcaseSection: React.FC = () => {
           className="mx-auto md:mx-0 mb-6"
         />
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight font-montserrat">
           crafting personalised <br />
           luxury experiences
         </h1>
 
-        <h2 className="text-lg sm:text-xl md:text-2xl text-orange-500 font-semibold text-left">
+        <h2 className="text-lg sm:text-xl md:text-2xl text-orange-500 font-semibold text-left font-montserrat">
           since 2010
         </h2>
 
