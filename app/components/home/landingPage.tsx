@@ -49,19 +49,19 @@ const LandingPage = () => {
                             <div className="flex justify-center mt-12">
                                 <nav className="space-y-4">
                                     <Link
-                                        href="#luxury-units"
+                                        href="/residential"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Luxury Multi-Dwelling Units &gt;
                                     </Link>
                                     <Link
-                                        href="#residential-villas"
+                                        href="/residential"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Large Residential Villas &gt;
                                     </Link>
                                     <Link
-                                        href="#reference-cinemas"
+                                        href="/residential"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Reference Cinemas &gt;
@@ -106,25 +106,25 @@ const LandingPage = () => {
                             <div className="flex justify-center mt-12">
                                 <nav className="space-y-3">
                                     <Link
-                                        href="#av-collaboration"
+                                        href="/commercial"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Audio & Video Collaboration &gt;
                                     </Link>
                                     <Link
-                                        href="#office-buildings"
+                                        href="/commercial"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Modern Office Buildings & Workspaces &gt;
                                     </Link>
                                     <Link
-                                        href="#worship"
+                                        href="/commercial"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Houses of Worship &gt;
                                     </Link>
                                     <Link
-                                        href="#event-centers"
+                                        href="/commercial"
                                         className="block text-primary hover:text-white text-center transition-colors text-sm md:text-base font-medium"
                                     >
                                         Lounges & Event Centers &gt;
