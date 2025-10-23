@@ -30,7 +30,7 @@ const ResidentialHeroSection: React.FC = () => {
           life.
         </p>
         <button className="px-6 py-3 bg-primary hover:bg-primary/30 rounded-lg text-lg font-medium transition">
-          Get Started
+          Speak With Us
         </button>
       </div>
     </section>

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import DotsIndicator from "@/app/components/app/DotsIndicator";
 
 const images = [
   "/images/new-imgs/stylish-highrise.png",
@@ -41,7 +42,7 @@ const WhyChooseUsSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="flex flex-col sm:flex-row md:flex-row items-center justify-between px-6 md:px-16 py-10 md:py-12 bg-black">
+    <section className="w-full h-screen flex flex-col sm:flex-row md:flex-row items-center justify-between px-6 md:px-16 py-10 md:py-12 bg-black">
       {/* Left Text Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -96,17 +97,11 @@ const WhyChooseUsSection: React.FC = () => {
         </AnimatePresence>
 
         {/* Dots Indicator */}
-        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex space-x-3">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full border-[2px] border-black transition ${
-                index === current ? "bg-primary" : "bg-gray-100"
-              }`}
-            ></button>
-          ))}
-        </div>
+        <DotsIndicator 
+            images={images}
+            current={current}
+            setCurrent={setCurrent}
+        />
       </div>
     </section>
   );

@@ -7,6 +7,7 @@ import Hero from "@/app/components/home/Hero";
 import ProjectDetail from "@/app/components/app/ProjectDetail";
 import { ProjectDetails } from "@/app/constants";
 import Image from "next/image";
+import TrustedBy from "@/app/shared/TrustedBy";
 
 const ReferenceCinemas: FC = () => {
     const [showHero, setShowHero] = useState(true);
@@ -25,6 +26,7 @@ const ReferenceCinemas: FC = () => {
                         description={`Give residents total control of their homes. From mood lighting to energy management and immersive entertainment, we deliver future-ready apartments that command higher demand and premium pricing.`}
                         bgImg="/images/new-imgs/de-altona.png"
                     />
+                    <TrustedBy />
                     <ProjectDetail project={ProjectDetails.largeVilla} />
                     <div className="w-full">
                         <Image

@@ -1,5 +1,7 @@
 import { ISidebarItem } from "../components/app/Sidemenu/Sidebaritem";
 
+export const AppAnimationSpeed: number = 4000;
+
 export const HeroBackgroundImages: string[] = [
     '/images/Hero-1.png',
     '/images/Hero-2.png',
@@ -21,17 +23,12 @@ export const DevelopersLogos: string[] = [
     '/images/company-logos/HH-Logo.png',
     '/images/company-logos/Petralon-New-Logo.png',
     '/images/company-logos/Microsoft-Logo.png',
-];
-
-export const ArchitectsLogos: string[] = [
     '/images/company-logos/mar-and-mor.png',
     '/images/company-logos/Yinka-Folawiyo-Group-Logo-q.png',
-];
-
-export const MEPLogos: string[] = [
     '/images/company-logos/lutron.svg',
     '/images/company-logos/mtn-logo.svg',
 ];
+
 
 export interface AppLink {
     path: string;
@@ -90,20 +87,20 @@ export const SidebarItems: ISidebarItem[] = [
         isCollapsed: false,
         subItems: [
             {
-                title: 'Premium Entertainment',
-                link: '/residential/premium-entertainment',
+                title: 'Luxury Multi-Dwelling Units',
+                link: '/residential/multi-dwelling-unit',
                 hasSubItems: false,
                 isCollapsed: false,
             },
             {
-                title: 'Comfort & Convenience',
-                link: '/residential/comfort-convenience',
+                title: 'Large Residential Villas',
+                link: '/residential/large-residential-villas',
                 hasSubItems: false,
                 isCollapsed: false,
             },
             {
-                title: 'Safety & Security',
-                link: '/residential/safety-security',
+                title: 'Reference Cinemas',
+                link: '/residential/reference-cinemas',
                 hasSubItems: false,
                 isCollapsed: false,
             },
@@ -116,20 +113,26 @@ export const SidebarItems: ISidebarItem[] = [
         isCollapsed: false,
         subItems: [
             {
-                title: 'Huddle & Meeting Rooms',
-                link: '/commercial/huddle-meeting-room',
+                title: 'Audio & Video Collaboration',
+                link: '/commercial/audio-video-collaboration',
                 hasSubItems: false,
                 isCollapsed: false,
             },
             {
-                title: 'Board Rooms & Training Rooms',
-                link: '/commercial/board-room',
+                title: 'Modern Office Buildings & Workspaces',
+                link: '/commercial/modern-office-buildings',
                 hasSubItems: false,
                 isCollapsed: false,
             },
             {
-                title: 'Auditorium',
-                link: '/commercial/auditorium',
+                title: 'Houses of Worship',
+                link: '/commercial/houses-of-worship',
+                hasSubItems: false,
+                isCollapsed: false,
+            },
+            {
+                title: 'Lounges & Event Centers',
+                link: '/commercial/lounges-event-centers',
                 hasSubItems: false,
                 isCollapsed: false,
             },

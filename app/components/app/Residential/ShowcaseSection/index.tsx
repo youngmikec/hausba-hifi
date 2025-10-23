@@ -17,37 +17,30 @@ const ShowcaseSection: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="flex flex-col sm:flex-row md:flex-row items-center justify-between px-6 md:px-16 py-10 md:py-12 bg-white">
+    <section className="flex flex-col sm:flex-row md:flex-row items-center justify-between bg-white h-screen">
       {/* Left Text Content */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="w-full sm:w-6/12 md:w-6/12 space-y-4 text-center md:text-left"
+        className="w-full space-y-4 text-center md:text-left px-6 md:px-16"
       >
-        <Image
-          src="/images/logo-black.png"
-          alt="Hausba Logo"
-          width={120}
-          height={40}
-          className="mx-auto md:mx-0 mb-6"
-        />
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight font-montserrat">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight font-montserrat">
           crafting personalised <br />
           luxury experiences
         </h1>
 
-        <h2 className="text-lg sm:text-xl md:text-2xl text-orange-500 font-semibold text-left font-montserrat">
+        <h2 className="text-lg sm:text-xl md:text-xl text-orange-500 font-semibold text-left font-montserrat">
           since 2010
         </h2>
 
-        <p className="font-montserrat text-left leading-relaxed px-4">
+        <p className="font-montserrat text-left leading-relaxed text-xs md:text-sm">
           With over a decade of delivering technology in Nigeria’s most
           prestigious projects, HAUSBA is the trusted partner for developers,
           architects, and homeowners who demand nothing but the best. Our
@@ -57,7 +50,7 @@ const ShowcaseSection: React.FC = () => {
       </motion.div>
 
       {/* Right Image Section */}
-      <div className="relative w-full sm:w-6/12 md:w-4/12 h-[500px] mt-10">
+      <div className="relative w-full h-full">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
@@ -71,24 +64,11 @@ const ShowcaseSection: React.FC = () => {
               src={images[current]}
               alt="Luxury building"
               fill
-              className="object-cover rounded-2xl"
+              className="object-cover"
               priority
             />
           </motion.div>
         </AnimatePresence>
-
-        {/* Dots Indicator */}
-        <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 flex space-x-3">
-          {images.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrent(index)}
-              className={`w-3 h-3 rounded-full border-[2px] border-black transition ${
-                index === current ? "bg-primary" : "bg-gray-100"
-              }`}
-            ></button>
-          ))}
-        </div>
       </div>
     </section>
   );

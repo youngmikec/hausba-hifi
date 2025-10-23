@@ -65,7 +65,7 @@ const OurProjectSection: FC = () => {
     const [activeTab, setActiveTab] = useState(0);
 
     return (
-        <div className="bg-white w-full mt-12">
+        <div className="bg-white w-full h-screen mt-12">
             <div className="my-4">
                 <p className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight text-center mb-4">Our Projects</p>
             </div>
@@ -88,11 +88,11 @@ const OurProjectSection: FC = () => {
                 }
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8 mx-auto w-11/12 sm:w-10/12 md:w-8/12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-8 mx-auto w-11/12 sm:w-10/12 md:w-10/12">
                 {
                     tabs[activeTab].projects.map((project, index) => (
                         <div key={index}>
-                            <div className="relative h-[300px] w-full overflow-hidden">
+                            <div className="relative h-[450px] w-full overflow-hidden">
                                 <Image 
                                     src={project.img} 
                                     alt={project.title} 
@@ -102,7 +102,7 @@ const OurProjectSection: FC = () => {
                                 />
                             </div>
 
-                            <p className=" w-full text-center text-black text-xs font-montserrat mt-2">
+                            <p className=" w-full text-center text-black text-sm md:text-[16px] font-montserrat mt-4">
                                 {project.title}
                             </p>
                         </div>
