@@ -48,7 +48,7 @@ export const FooterLinks: {
     menu: [
         { path: "/about-us", title: "About Us" },
         { path: "/estimator", title: "Estimator" },
-        { path: "/portfolio", title: "Our Portfolio" },
+        { path: "/projects", title: "Our Portfolio" },
         { path: "/contact-us", title: "Contact Us" },
     ],
     socials: [
@@ -172,7 +172,7 @@ export const SidebarItems: ISidebarItem[] = [
     },
     {
         title: 'Projects',
-        link: '/portfolio',
+        link: '/projects',
         isCollapsed: false,
         hasSubItems: false,
     }

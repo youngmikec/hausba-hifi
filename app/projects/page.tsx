@@ -10,7 +10,7 @@ import { PortfolioProjects, IPortfolioProject } from "../constant";
 
 const PortfolioPage: FC = () => {
   const router = useRouter();
-  const gotoProjectPage = (slug: string) => router.push(`/portfolio/${slug}`);
+  const gotoProjectPage = (slug: string) => router.push(`/projects/${slug}`);
 
   return (
     <HomeLayout>
@@ -33,13 +33,15 @@ const PortfolioPage: FC = () => {
                 key={idx}
                 onClick={() => gotoProjectPage(item.slug)}
               >
-                <Image
-                  src={item.img}
-                  alt="Home Cinema Room"
-                  className="object-contain rounded-2xl"
-                  width={450}
-                  height={900}
-                />
+                <div className="relative w-[450px] h-[200px] md:h-[300px] lg:h-[400px]">
+                  <Image
+                    src={item.img}
+                    alt="Home Cinema Room"
+                    className="object-contain rounded-2xl"
+                    fill
+                    objectFit='cover'
+                  />
+                </div>
                 <div className="-mt-4 z-50 ml-8 pl-4 py-6 min-h-[100px] flex flex-col gap-2 border-l-[1px] border-black ">
                   <p className="font-semibold font-montserrat text-black text-xl mt-2">{item.title}</p>
                   <p className="font-montserrat">{item.title}</p>

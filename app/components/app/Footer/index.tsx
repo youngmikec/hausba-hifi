@@ -68,7 +68,7 @@ const Footer: FC = () => {
                                     <p className="my-4">
                                         <Link
                                             className="font-montserrat text-white my-4 text-sm"
-                                            href={"/portfolio"}
+                                            href={"/projects"}
                                         >
                                             <span>Our Portfolio</span>
                                         </Link>

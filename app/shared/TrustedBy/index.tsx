@@ -14,7 +14,7 @@ const TrustedBy: FC = () => {
         {DevelopersLogos.map((logo, idx) => (
           <div
             key={idx}
-            className="rounded-2xl border border-black/50 p-6 flex items-center justify-center bg-white shadow-sm transition-transform duration-300 hover:scale-[1.02]"
+            className="rounded-2xl hover:bg-slate-300 p-6 flex items-center justify-center bg-white shadow-sm transition-transform duration-300 hover:scale-[1.02]"
           >
             <Image src={logo} alt={`developer-logo-${idx}`} width={220} height={120} className="object-contain" />
           </div>

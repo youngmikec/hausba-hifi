@@ -7,25 +7,25 @@ import { FC, useState } from "react";
 const tabs = [
     {
         title: 'Luxury MDUs',
-        numOfProject: 5,
+        numOfProject: 7,
         projects: [
             {
                 title: 'XAMIRA HEIGHTS',
                 img: '/images/new-imgs/stylish-highrise.png'
             },
             {
-                title: 'ALTO PENTHOUSE ACCRA',
-                img: '/images/new-imgs/luxury-apartment.png'
+                title: 'BOURDILON4 PROJECT',
+                img: '/images/new-imgs/highrise-building.png'
             },
             {
-                title: 'BOURDILON 4',
-                img: '/images/new-imgs/highrise-building.png'
+                title: 'ALTO PENTHOUSE ACCRA',
+                img: '/images/new-imgs/luxury-apartment.png'
             },
         ]
     },
     {
         title: 'Large Villas',
-        numOfProject: 45,
+        numOfProject: 17,
         projects: [
             {
                 title: 'CONFIDENCE CARGO',
@@ -33,7 +33,7 @@ const tabs = [
             },
             {
                 title: 'DLM',
-                img: '/images/new-imgs/dlm.png'
+                img: '/images/new-imgs/dlm-automation.png'
             },
             {
                 title: 'SS MAITAMA',
@@ -43,7 +43,7 @@ const tabs = [
     },
     {
         title: 'Reference Cinemas',
-        numOfProject: 27,
+        numOfProject: 12,
         projects: [
             {
                 title: 'LEKKI CINEMA',
@@ -111,7 +111,7 @@ const OurProjectSection: FC = () => {
             </div>
 
             <div className="flex justify-center items-center mb-12">
-                <Link href="/portfolio" className="px-6 py-3 text-primary hover:scale-105 text-sm transition">
+                <Link href="/projects" className="px-6 py-3 text-primary hover:scale-105 text-sm transition">
                     View Full Portfolio
                 </Link>
             </div>
