@@ -812,21 +812,250 @@ export const PortfolioProjects: IPortfolioProject[] = [
     ]
   },
   {
+    img: "/images/new-imgs/microsoft-lagos-office.png",
+    title: "MICROSOFT LAGOS OFFICE",
+    slug: "microsoft-lagos-office",
+    location: "Lagos, Nigeria",
+    projectStatus: "COMPLETED 2021",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `This internationally renowned client could only afford to have the 
+        best smart lighting system in the world installed their new office. `
+      },
+      {
+        title: "Our Solution.",
+        description: `For the first time, we installed the most advanced commercial smart 
+        lighting system - Lutron Quantum System to meet the pre-defined technical specifications 
+        of the project.`
+      },
+      {
+        title: "Brands.",
+        description: `Lighting Control: Lutron`
+      },
+    ]
+  },
+  {
+    img: "/images/new-imgs/mtn-5g-experience-center.png",
+    title: "MTN 5G EXPERIENCE CENTER",
+    slug: "mtn-5g-experience-center",
+    location: "Maitama, Abuja",
+    projectStatus: "COMPLETED 2024",
+  },
+  {
     img: "/images/gt-bank.png",
     title: "GT Bank Auditorium",
     slug: "gt-bank-auditorium",
-    location: "Lagos, Nigeria",
+    location: "Abeokuta, Ogun State",
+    projectStatus: "COMPLETED 2021",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `The client wanted to make a statement, and standout from competition. 
+        We were charged to deliver a modern training facility that will incorporate recent technology 
+        trends while providing support for legacy technology.`
+      },
+      {
+        title: "Our Solution.",
+        description: `A fully integrated Crestron Unified Communications system with 
+        full Audio Visual design for the large auditorium to ensure speech intelligibility for all participants. 
+        We deployed the first crowd mic solution in Nigeria to allow training participants make contributions using 
+        their mobile devices.`
+      },
+      {
+        title: "Brands.",
+        description: `AV Processor: Crestron
+          Video Conferencing: Yealink
+          Speakers: Apart Audio
+          Amplifiers: Apart Audio
+          Projection Screen: Screenline
+          Video Wall: Samsung
+          Projection: Sony
+          Lighting Control: Crestron
+          Automation: Crestron
+          Crowd Mics: Biamp
+          Rack: Middle Atlantic
+          Network: Luxul`
+      },
+    ]
   },
   {
-    img: "/images/grilled-house.png",
-    title: "Heritage Place Boardroom",
+    img: "/images/new-imgs/mar-and-mor-head-office.png",
+    title: "MAR & MOR HEAD OFFICE ",
+    slug: "mar-and-mor-head-office",
+    location: "Lagos, Nigeria",
+    projectStatus: "COMPLETED 2022",
+  },
+  {
+    img: "/images/new-imgs/uac-group-head-office.png",
+    title: "UAC GROUP HEAD OFFICE",
+    slug: "uac-group-head-office",
+    location: "Lagos Island, Lagos",
+    projectStatus: "COMPLETED 2021"
+  },
+  {
+    img: "/images/new-imgs/lambert-electromec-boardroom.png",
+    title: "LAMBERT ELECTROMEC BOARDROOM ",
+    slug: "lambert-electromec-boardroom",
+    location: "Lagos, Nigeria",
+    projectStatus: "COMPLETED 2023",
+  },
+  {
+    img: "/images/new-imgs/heritage-place-boardroom.png",
+    title: "HERITAGE PLACE BOARDROOM",
     slug: "heritage-place-boardroom",
-    location: "Lagos, Nigeria",
+    location: "Lagos",
+    projectStatus: "COMPLETED 2020",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `The facility was an office building used by several businesses with a
+        shared set of collapsable meeting room. 
+        The challenge was to make the meeting rooms operate independently and collectively.`
+      },
+      {
+        title: "Our Solution.",
+        description: `We deployed a flexible wireless video conferencing system that could be 
+        merged into one central system when all rooms are collapsed.`
+      },
+      {
+        title: "Brands.",
+        description: `Conferencing: Yealink
+          Speakers: Apart Audio
+          Display: OFE
+          Projection: NA
+          Automation: Control4
+          Rack: Middle Atlantic
+          Network: Luxul`
+      },
+    ]
   },
   {
-    img: "/images/black-seat-cinema.png",
-    title: "BUA Cinema",
-    slug: "bua-cinema",
-    location: "Lagos, Nigeria",
+    img: "/images/new-imgs/coronation-bank.png",
+    title: "CORONATION BANK",
+    slug: "coronation-bank",
+    location: "Ikoyi, Lagos",
+    projectStatus: "COMPLETED 2020",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `The client wanted an office wide video distribution system with a state 
+        of the art conferencing and training room facility in their pent floor training rooms.
+        Where to merge 3 training rooms to dynamically operate as one.`
+      },
+      {
+        title: "Our Solution.",
+        description: `We implemented full meeting room projection and conferencing system for the 3 meeting rooms. 
+        Then using advanced AV automation, connected the sound and visuals of all three rooms into one central AV matrix system. 
+        The automation system detects when the rooms are collapsed and switches to one central system.`
+      },
+      {
+        title: "Brands.",
+        description: `AV Processor: Extron
+          Speakers: Apart Audio
+          Amplifiers: Apart Audio
+          Screen: Screenline
+          Projection: Optoma
+          Automation: Extron
+          Rack: Middle Atlantic
+          Network: Luxul`
+      },
+    ]
+  },
+  {
+    img: "/images/new-imgs/softcom-head-office.png",
+    title: "SOFTCOM HEAD OFFICE",
+    slug: "softcom-head-office",
+    location: "Ikeja, Lagos",
+    projectStatus: "COMPLETED 2019",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `A trendy tech company in Softcom wanted a modern office space that will inspire innovation in employees.`
+      },
+      {
+        title: "Our Solution.",
+        description: `Full smart lighting and smart audio system was deployed to have music playing 
+        around the office with Vitrea smart lighting system to enable efficient management and control 
+        of office lighting.`
+      },
+      {
+        title: "Brands.",
+        description: `
+          Speakers: Origin Acoustics
+          Amplifiers: Sonos
+          Lighting Control: Vitrea
+          Automation: Control4
+          Surveillance: Alarm.com
+          Rack: Middle Atlantic
+          Network: Luxul`
+      },
+    ]
+  },
+  {
+    img: "/images/new-imgs/sencillo-beach-house.png",
+    title: "SENCILLO BEACH HOUSE",
+    slug: "sencillo-beach-house",
+    location: "Ilashe, Lagos",
+    projectStatus: "COMPLETED 2019",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `This beach house was designed to become a prime destination in 
+        Lagos to deliver and escape, out of this world experience for guests. 
+        The sound had to match the luxury experience and exquisite architecture. `
+      },
+      {
+        title: "Our Solution.",
+        description: `We delivered landscape speakers for the beach pool area to blend with 
+        the beach side feel while achieving the required power to accomodate any beach side events. `
+      },
+      {
+        title: "Brands.",
+        description: `
+          Speakers: Sonance
+          Audio System: Sonos 
+          Network: Luxul`
+      },
+    ]
+  },
+  {
+    img: "/images/new-imgs/uac-group-head-office-2.png",
+    title: "UAC GROUP HEAD OFFICE",
+    slug: "uac-group-head-office-2",
+    location: "Lagos Island, Lagos",
+    projectStatus: "COMPLETED 2021",
+    details: [
+      {
+        title: "Key Challenge.",
+        description: `Client wanted a state of the art boardroom along side some smaller meeting 
+        rooms in their all-new office building`
+      },
+      {
+        title: "Our Solution.",
+        description: `Crestron had to be the solution. Using Crestron's Flex Unified Conferencing system, 
+        we integrated and deployed the 20 seater boardroom with mics speech enhancement`
+      },
+      {
+        title: "Brands.",
+        description: `Video Conferencing: Crestron
+          AV Processor: Crestron
+          Speakers: Crestron
+          Amplifiers: Crestron
+          Screen: Samsung
+          Projection: NA
+          Lighting Control: Crestron
+          Automation: Crestron
+          Rack: Middle Atlantic
+          Network: Luxul`
+      },
+    ]
+  },
+  {
+    img: "/images/new-imgs/hausba-lagos-experience-center.png",
+    title: "HAUSBA LAGOS EXPERIENCE CENTER",
+    slug: "hausba-lagos-experience-center",
+    location: "Lekki, Lagos",
+    projectStatus: "COMPLETED 2021",
   },
 ];
